@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-:mod:`metaopt.algo.evol` -- Perform evolutionary optimization on hyperparameters 
+:mod:`orion.algo.evol` -- Perform evolutionary optimization on hyperparameters 
 ==================================================================================
 
 .. module:: evol
@@ -10,7 +10,7 @@
 """
 import numpy
 
-from metaopt.algo.base import BaseAlgorithm
+from orion.algo.base import BaseAlgorithm
 
 
 class EvolutionaryOptimizer(BaseAlgorithm):

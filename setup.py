@@ -1,25 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Installation script for `metaopt.algo.skopt.bayes`."""
+"""Installation script for `orion.algo.skopt.bayes`."""
 from setuptools import setup
 
 setup_args = dict(
-    name='metaopt.algo.evol',
+    name='orion.algo.evol',
     version=0.1,
     description="Implement evolutionary algorithms on Orion.",
     license='BSD-3-Clause',
     author='Dendi Suhubdy',
     author_email='dendi.suhubdy@umontreal.ca',
-    url='https://github.com/dendisuhubdy/metaopt-evolutionary',
-    packages=['metaopt.algo.evol'],
+    url='https://github.com/dendisuhubdy/orion-evolutionary',
+    packages=['orion.algo.evol'],
     package_dir={'': 'src'},
     include_package_data=True,
     entry_points={
         'OptimizationAlgorithm': [
-            'evol = metaopt.algo.evol'
+            'evol = orion.algo.evol'
             ],
         },
-    install_requires=['metaopt.core'],
+    install_requires=['orion.core'],
     setup_requires=['setuptools'],
     # "Zipped eggs don't play nicely with namespace packaging"
     # from https://github.com/pypa/sample-namespace-packages
